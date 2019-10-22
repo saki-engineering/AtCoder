@@ -43,8 +43,7 @@ int main(void){
     //Cの値を元に昇順ソート
     qsort(D,M,sizeof(action),comp_act);
 
-    //for(int j=0;j<M;j++) printf("%d %ld \n",D[j].max_card, D[j].value);
-
+    //操作をN回やってカードの数字を書き換える
     int a=0;
     for(int j=M-1;j>=0;j--){
         for(int i=0;i<D[j].max_card && a<N;i++){
