@@ -14,6 +14,7 @@ int main(void){
 
     //文字列の長さがわかっているんだったら、malloc→scanf%sでやったほうがエラーが起きない
     //自作のstring_inputでやったら謎のREが出てしまった
+    //(多分自作ライブラリの方では、mallocを使わずでかいメモリをとってるから、それでセグフォになってる？)
     String S;
     NEW(S,N+1);
     scanf("%s", S);
